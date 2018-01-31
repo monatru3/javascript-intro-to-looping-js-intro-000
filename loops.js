@@ -19,14 +19,10 @@ function whileLoop(n) {
 
 
 
-function doWhileLoop(array) {
-
-do {
-  function maybeTrue() {
+function doWhileLoop(array, function maybeTrue() {
+  return Math.random() >= 0.5
+}) {
+  do {
     array.pop()
-    return Math.random() >= 0.5
-  }
-    
-  } while(maybeTrue()||array.length===0);
-
+    } while(maybeTrue()||array.length===0);
 };
